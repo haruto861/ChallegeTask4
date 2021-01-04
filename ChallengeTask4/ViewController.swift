@@ -11,35 +11,19 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     
-    
     @IBOutlet weak var plusButton: UIButton!
-    
     
     @IBOutlet weak var clearButton: UIButton!
     
     var num = 0
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
-    
     @IBAction func plus(_ sender: Any) {
-        
         num = num + 1
-        
         label.text = String(num)
-       
     }
     
     @IBAction func clear(_ sender: Any) {
-        
         num = 0
         label.text = String(num)
-        
-        
     }
-    
 }
-
